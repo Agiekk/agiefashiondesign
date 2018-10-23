@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Your styles -->
+  <link rel="stylesheet" href="styles1.css">
+  <title>Home</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Agie's Fashion and Design online Store</h1>
+    </header>
+
+    <h2>Contact Details</h2>
+
+    <!-- Adding form to submit address and credit card details
+     before submit it will call the above defined validate method
+     to check if it passes client side validations
+     once it passes then it takes to the thanks.html page  -->
+    <form id="addressForm" action="thanks.html" onsubmit="return validate()">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="first and last name" placeholder="Name.." required>
+
+      <label for="lemail">Email Address</label>
+      <input type="text" id="lemail" name="lemail" placeholder="Email.." required>
+
+      <label for="lstreet">Street</label>
+      <input type="text" id="lstreet" name="lstreet" placeholder="Street.." required>
+
+      <label for="lcity">City</label>
+      <input type="text" id="lcity" name="lcity" placeholder="City.." required>
+
+      <label for="lstate">State/Province</label>
+      <input type="text" id="lstate" name="lstate" placeholder="State/Province.." required>
+
+      <label for="country">Country</label>
+      <select id="country" name="country" required>
+        <option value="australia">USA</option>
+        <option value="canada">Other</option>
+
+      </select>
+
+      <label for="Telephone Type">Telephone</label>
+      <select id="TelType" name="Telephone">
+        <option value="Mobile">Cellphone</option>
+        <option value="Homephone">Home Phone</option>
+        <option value="workphone">Work phone</option>
+      </select>
+
+      <input type="submit" value="Submit">
+
+
+  </div>
+
+  <div id="footer">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="payment.html">Payment form</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="chatting.html">Online Chat</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <footer>2018Copyright &copy; Agie K fashion and design Ltd.</footer>
+  </div>
+
+</body>
+
+</html>
